@@ -25,7 +25,7 @@ class Song
     attr_accessor col_name.to_sym
   end
 
-  def initialize(options={})
+  def initialize(options={}) #why is it named options?
     options.each do |property, value|
       self.send("#{property}=", value)
     end
@@ -59,6 +59,5 @@ class Song
   end
 
 end
-
 
 
